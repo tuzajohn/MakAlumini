@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = ViewData["PageTitle"] = "Dashboard";
+
+}
+
+@section styles{
+
+}
+
+@section crumbs{
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+    </li>
+</ol>
+}
+
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stat-widget-one">
+                <div class="stat-icon dib">
+                    <i class="ti-money color-success border-success"></i>
+                </div>
+                <div class="stat-content dib">
+                    <div class="stat-text">Total Donations</div>
+                    <div class="stat-digit">1,012</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stat-widget-one">
+                <div class="stat-icon dib">
+                    <i class="ti-user color-primary border-primary"></i>
+                </div>
+                <div class="stat-content dib">
+                    <div class="stat-text">Pending Alumini</div>
+                    <div class="stat-digit">961</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="stat-widget-one">
+                <div class="stat-icon dib">
+                    <i class="ti-layout-grid2 color-pink border-pink"></i>
+                </div>
+                <div class="stat-content dib">
+                    <div class="stat-text">Active Alumini</div>
+                    <div class="stat-digit">770</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-title pr">
+                <h4>Most Recent Alumini</h4>
+
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table student-data-table table-hover m-t-20">
+                        <thead>
+                            <tr>
+                                <th><label><input type="checkbox" value=""></label>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Graduation Year</th>
+                                <th>Contact</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                for (var i = 0; i < 5; i++)
+                                {
+                                    <tr title="View @i" onclick="window.location.href= '/alumini?id=@i'">
+                                        <td><label><input type="checkbox" value=""></label>#2901</td>
+                                        <td>
+                                            John Doe
+                                        </td>
+                                        <td>
+                                            johndoe@example.com
+                                        </td>
+                                        <td>
+                                            1994
+                                        </td>
+                                        <td>
+                                            256700120020
+                                        </td>
+                                        <td>
+                                            @{
+                                                if (i % 2 == 0)
+                                                {
+                                                    <span class="badge badge-success">Active</span>
+                                                }
+                                                else if (i % 3 == 0)
+                                                {
+                                                    <span class="badge badge-warning">Pending</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge badge-danger">Not Active</span>
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            10/05/2017
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /# column -->
+</div>
+
+@section scripts{
+
+}

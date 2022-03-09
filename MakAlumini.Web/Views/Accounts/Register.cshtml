@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<div class="login-form">
+    <form>
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+        
+        <div class="form-group">
+            <label>Contact</label>
+            <input type="tel" class="form-control" placeholder="Contact">
+        </div>
+        
+        <div class="form-group">
+            <label>Course</label>
+            <select class="form-control">
+                <option value="" selected>Select the course you studied</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+                <option>BSCS</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Year of Graduation</label>
+            <input type="tel" class="form-control" placeholder="Gration year">
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Agree the terms and policy
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+        <div class="register-link m-t-15 text-center">
+            <p>Already have account ? <a href="~/"> Sign in</a></p>
+        </div>
+    </form>
+</div>

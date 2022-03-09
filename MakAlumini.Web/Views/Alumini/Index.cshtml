@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = ViewData["PageTitle"] = "Alumini";
+
+}
+
+@section styles{
+
+}
+
+@section crumbs{
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><a href="#">Alimini</a></li>
+</ol>
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-title pr">
+                <h4>All Recent Alumini</h4>
+
+            </div>
+            <div class="card-body">
+                <div class="bootstrap-data-table-panel">
+                    <div class="table-responsive">
+                        <table class="table student-data-table table-hover m-t-20" id="bootstrap-data-table-export">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Graduation Year</th>
+                                    <th>Contact</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    for (var i = 0; i < 5; i++)
+                                    {
+                                        <tr title="View @i" onclick="window.location.href= '/alumini?id=@i'">
+                                            <td>#2901</td>
+                                            <td>
+                                                John Doe
+                                            </td>
+                                            <td>
+                                                johndoe@example.com
+                                            </td>
+                                            <td>
+                                                1994
+                                            </td>
+                                            <td>
+                                                256700120020
+                                            </td>
+                                            <td>
+                                                @{
+                                                    if (i % 2 == 0)
+                                                    {
+                                                        <span class="badge badge-success">Active</span>
+                                                    }
+                                                    else if (i % 3 == 0)
+                                                    {
+                                                        <span class="badge badge-warning">Pending</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge badge-danger">Not Active</span>
+                                                    }
+                                                }
+                                            </td>
+                                            <td>
+                                                10/05/2017
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /# column -->
+</div>
+
+@section scripts{
+
+}

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "News Letters| ICT Innovations";
+    ViewData["PageTitle"] = "ICT Innovations";
+}
+
+@section styles{
+
+}
+
+@section crumbs{
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/newsletters">News Letters</a></li>
+    <li class="breadcrumb-item active">Details &nbsp; <span class="badge rounded-pill bg-success">Published</span></li>
+</ol>
+
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body pl-3 pr-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="newsletters/newpublication" class="btn btn-primary pl-3 pr-3"> <i class="fas fa-plus"></i> New Letter</a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                    <a href="~/newsletters/editpublication?id=0" class="btn btn-outline-primary pl-3 pr-3">Edit</a>
+                    <button class="btn btn-warning pl-3 pr-3">Un-publish</button>
+                </div>
+                </div>
+                <hr />
+
+                <p style="text-align: justify; ">Alumni Historically, Makerere University has brought together and trained students from different parts of the world with a broad-spectrum of backgrounds. Our Alumni have healed the sick, laid the foundations for our industries, and inspired us through literature, music and art.</p>
+                <p style="text-align: justify; ">Today, Makerere University is educating the students and recruiting the scholars who will build Uganda’s future. Over the years, this mix of cultures, interest and knowledge has created a wealth of both social and academic bonds.</p>
+                <p style="text-align: justify; ">Makerere University has established a Development Office whose main task will be to diversify the University’s resource base. The Development Office is comprised of two key functions; Alumni Relations and Prospect Research, both of which aim to cultivate and promote lasting ties between graduates, friends and future development partners of Makerere University.</p>
+                <p style="text-align: justify; ">The alumni desk has been established to organise and coordinate Makerere University Alumni through a comprehensive Alumni database.</p>
+                <p style="text-align: justify; ">The Development Office is introducing a survey form to help us capture relevant data from Makerere the University Alumni. Meanwhile, an Alumni website is being developed through which, the Development Office will keep you in touch with your fellow Alumni. It will also serve to uphold the Makerere spirit in order to help re kindle old friendships and possibly create new ones.</p>
+                <p style="text-align: justify; ">The Alumni relations programme will be on going for years to come with academic contributions, news about interesting developments on campus and up-coming events. We want to stimulate academic and professional discussion among alumni in order to promote interaction.</p>
+                <p style="text-align: justify; ">The Alumni Relations office will ensure that all alumni are mobilised, newsletters concerning alumni activities are published and their views solicited in addition to ensuring that Alumni are informed and connected to the university. The Alumni Relations desk will work closely with the <a href="http://www.convocation.mak.ac.ug/">convocation</a> office to promote the interests of our alumni.</p>
+                <p style="text-align: justify; ">Wherever you may be located, the Makerere Alumni website will serve to reconnect you with fellow Alumni around the world and keep you connected to Makerere. Details can be accessed at the <a href="http://alumni.mak.ac.ug/">Alumni Website</a></p>
+                <p>The Alumni Relations desk requires you to update your records with them by logging on "<a href="http://survey.mak.ac.ug/survey/entry.jsp?id=1162539854212">http://survey.mak.ac.ug/survey/entry.jsp?id=1162539854212</a>" and filling in the required information.</p>
+                <p>For more information please send your inquiries to <u><font color="#0000ff"><a href="mailto:alumni@pdd.mak.ac.ug">alumni@pdd.mak.ac.ug</a></font></u>&nbsp;or <a href="mailto:makerere@alumni.mak.ac.ug">makerere@alumni.mak.ac.ug</a></p>
+                <p>OUR MISSION IS TO PROMOTE AND PROTECT THE PRIDE, TRADITION AND UNIQUE CHARACTER OF MAKERERE.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 class="strickeThrough"><span>Comments</span></h4>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="comment mt-4 text-justify float-left">
+                    <h4>Jhon Doe <small class="text-mute">- 20 October, 2018</small></h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="comment mt-4 text-justify float-left">
+                    <h4>Jhon Doe <small class="text-mute">- 20 October, 2018</small></h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h4 class="strickeThrough"><span>Post a Comment</span></h4>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="email" class="form-control" name="name" id="name" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="your email address">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <button type="reset" class="btn btn-danger">Clear</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+
+}

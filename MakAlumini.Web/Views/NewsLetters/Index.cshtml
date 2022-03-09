@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = ViewData["PageTitle"] = "News Letters";
+
+}
+
+@section styles{
+
+}
+
+@section crumbs{
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><a href="#">News Letters</a></li>
+</ol>
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="bootstrap-data-table-panel">
+                    <div class="table-responsive">
+                        <table class="table student-data-table table-hover m-t-20" id="bootstrap-data-table-export">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>Title</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    for (var i = 0; i < 5; i++)
+                                    {
+                                        <tr title="View @i" onclick="window.location.href= '/newsletters?id=@i'">
+                                            <td>
+                                                #2901
+                                            </td>
+                                            <td>
+                                                ICT innovations
+                                            </td>
+                                            <td>
+                                                @{
+                                                    if (i % 2 == 0)
+                                                    {
+                                                        <span class="badge badge-success">Published</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <span class="badge badge-danger">Not Published</span>
+                                                    }
+                                                }
+                                            </td>
+                                            <td>
+                                                10/05/2017
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /# column -->
+</div>
+
+@section scripts{
+
+}
